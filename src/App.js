@@ -1,9 +1,9 @@
 import './App.css';
-import Sidenav from './components/Sidenav';
+import Navbar from './components/Navbar';
 
 const App = () => (
   <div>
-    <Sidenav />
+    <Navbar />
   </div>
 );
 
