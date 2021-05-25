@@ -31,7 +31,7 @@ const Navbar = () => {
                       d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
                     />
                   </svg>
-                  <span className="font-bold">Better Dev</span>
+                  <span className="font-bold">JP Dev</span>
                 </a>
               </div>
 
@@ -88,12 +88,25 @@ const Navbar = () => {
         </div>
 
         {/* mobile menu */}
-        <div className={`md:hidden ${mobileMenuIsVisible ? null : 'hidden'} `}>
+        <div
+          className={`md:hidden ${
+            mobileMenuIsVisible ? null : 'hidden'
+          } px-2 pb-3`}
+        >
           <a href="#" className="block px-4 py-2 text-sm hover:bg-gray-200">
             Features
           </a>
           <a href="#" className="block px-4 py-2 text-sm hover:bg-gray-200">
             Pricing
+          </a>
+          <a href="#" className="block px-4 py-2 text-sm hover:bg-gray-200">
+            Login
+          </a>
+          <a
+            href="#"
+            className="inline-block px-2 py-1 ml-4 text-sm text-yellow-900 transition duration-300 bg-yellow-400 rounded hover:bg-yellow-300 hover:text-yellow-800"
+          >
+            Sign up
           </a>
         </div>
       </nav>
